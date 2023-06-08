@@ -22,7 +22,7 @@ Label(show,text ="Enter Text", font = 'arial 16 bold', bg ='white smoke').place(
 Input_text = Text(show,font = 'arial 16 bold', height = 11, wrap = WORD, padx=5, pady=5, width = 60)
 Input_text.place(x=30,y = 100)
 Label(show,text ="Output", font = 'arial 13 bold', bg ='white smoke').place(x=780,y=60)
-Output_text = Text(root,font = 'arial 10', height = 11, wrap = WORD, padx=5, pady= 5, width =60)
+Output_text = Text(show,font = 'arial 10', height = 11, wrap = WORD, padx=5, pady= 5, width =60)
 Output_text.place(x = 600 , y = 100)
 
 #define Combobox to a choose a language
@@ -42,6 +42,6 @@ def Translate():
     Output_text.insert(END, translated.text)
 
 #this function button is for translating
-trans_btn = Button(root, text='Translate', font='arial 12 bold', pady=5, command=Translate, bg='royal blue1',activebackground='sky blue')
+trans_btn = Button(show, text='Translate', font='arial 12 bold', pady=5, command=Translate, bg='royal blue1',activebackground='sky blue')
 trans_btn.place(x=490, y=180)
 show.mainloop()
